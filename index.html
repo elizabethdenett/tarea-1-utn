@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi primera página web semántica</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+
+    <header id="encabezado-principal">
+      <h1>🐾 El Mundo de los Caniches</h1>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobre-la-raza">Sobre la raza</a></li>
+          <li><a href="#cuidados">Cuidados</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="inicio">
+
+      <article id="sobre-la-raza" class="articulo-principal">
+        <h2>El Caniche: inteligencia y ternura en cuatro patas</h2>
+
+        <p>
+          El caniche es una de las razas de perros <strong>más inteligentes del mundo</strong>.
+          Su pelaje rizado y su carácter afectuoso lo convierten en un compañero
+          <em>ideal para familias y personas mayores</em>.
+          Además, es considerado <mark>hipoalergénico</mark>, lo que lo hace perfecto
+          para personas con alergias.
+        </p>
+
+        <img
+          src="assets/perro-caniche.jpeg"
+          alt="Caniche toy de pelaje blanco y rizado mirando a cámara con la boca abierta"
+          class="foto-caniche"
+        />
+
+        <h3 id="cuidados">Pasos para cuidar a tu caniche</h3>
+        <ol>
+          <li>Cepillar su pelaje al menos <strong>tres veces por semana</strong> para evitar enredos.</li>
+          <li>Llevar al veterinario cada seis meses para un chequeo general y vacunas.</li>
+          <li>Proporcionar ejercicio diario y <em>estimulación mental</em> con juegos y entrenamiento.</li>
+        </ol>
+      </article>
+
+      <section id="contacto">
+        <div id="formulario-contacto">
+          <h2>📬 Contacto</h2>
+          <div class="grupo-campo">
+            <label for="nombre">Nombre completo</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Ej: María García"
+            />
+          </div>
+
+          <div class="grupo-campo">
+            <label for="email">Correo electrónico</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Ej: maria@email.com"
+            />
+          </div>
+
+          <div class="grupo-campo">
+            <label for="tema">Tema de consulta</label>
+            <select id="tema" name="tema">
+              <option value="">-- Seleccioná una opción --</option>
+              <option value="cuidados">Cuidados generales</option>
+              <option value="adopcion">Adopción</option>
+              <option value="adiestramiento">Adiestramiento</option>
+            </select>
+          </div>
+
+          <button type="button" class="btn-enviar">Enviar consulta</button>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <small>© 2026 · Elizabeth Denett · Antes de React — Módulo 1, Unidad 1</small>
+    </footer>
+
+  </body>
+</html>
